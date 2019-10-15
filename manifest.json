@@ -1,0 +1,13 @@
+{
+    "manifest_version": 1,
+    "name": "Scribd pages reveal",
+    "version": "0.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": ["content.js"]
+        }
+    ]
+}
