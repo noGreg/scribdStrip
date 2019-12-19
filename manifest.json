@@ -1,12 +1,14 @@
 {
     "manifest_version": 2,
     "name": "Scribd pages reveal",
-    "version": "0.1",
+    "version": "1.0",
     "content_scripts": [
         {
             "matches": [
-                "http://github.com/*",
-                "https://github.com/*"
+                "http://www.scribd.com/*",
+                "https://www.scribd.com/*",
+                "https://scribd.com/*",
+                "http://scribd.com/*"
             ],
             "js": ["content.js"]
         }
