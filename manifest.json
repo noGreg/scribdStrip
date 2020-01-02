@@ -2,6 +2,12 @@
     "manifest_version": 2,
     "name": "Scribd pages reveal",
     "version": "1.0",
+    "description": "Chrome extension for Scribd Document pages revealing without subscribing.",
+    "icons": { 
+        "16": "./assets/images/logo16.png",
+        "48": "./assets/images/logo48.png",
+        "128": "./assets/images/logo128.png" 
+    },
     "content_scripts": [
         {
             "matches": [
