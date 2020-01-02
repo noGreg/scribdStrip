@@ -5,10 +5,8 @@
     "content_scripts": [
         {
             "matches": [
-                "http://www.scribd.com/*",
-                "https://www.scribd.com/*",
-                "https://scribd.com/*",
-                "http://scribd.com/*"
+                "https://*.scribd.com/*",
+                "http://*.scribd.com/*"
             ],
             "js": ["content.js"]
         }
