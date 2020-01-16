@@ -11,3 +11,7 @@ Just click the 'S' button on chrome bar to reveal the pages in front of you.
 # Contribute
 
 If you want to fork and improve or modify something, please leave a comment [here](https://github.com/noGreg/scribdStrip/issues/1) about it 🙏
+
+# Chrome store
+
+In case that you want to [see|test|use] the extension as a quick here is the link to the [Chrome extension](https://chrome.google.com/webstore/category/extensions)
