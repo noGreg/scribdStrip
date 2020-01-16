@@ -10,4 +10,4 @@ Just click the 'S' button on chrome bar to reveal the pages in front of you.
 
 # Contribute
 
-If you want to fork and improve or modify something, please write [here](https://github.com/noGreg/scribdStrip/issues/1)
+If you want to fork and improve or modify something, please leave a comment [here](https://github.com/noGreg/scribdStrip/issues/1) about it 🙏
