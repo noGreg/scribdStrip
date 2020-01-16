@@ -25,6 +25,8 @@
                         
                         Array.from(blurGroup.children).forEach(span => {
                             span.style.textShadow = 'black 0px 0px 1px';
+                            span.style.userSelect = 'text';
+                            span.removeAttribute('unselectable');
                         });
                     });
 
