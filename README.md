@@ -14,4 +14,4 @@ If you want to fork and improve or modify something, please leave a comment [her
 
 # Chrome store
 
-In case that you want to [see|test|use] the extension as a quick here is the link to the [Chrome extension](https://chrome.google.com/webstore/category/extensions)
+In case that you want to [see|test|use] the extension as a quick here is the link to the [Chrome extension](https://chrome.google.com/webstore/detail/scribd-pages-reveal/pjdpilmkgoodplhgpohdfpmgajmnkiek)
