@@ -12,7 +12,7 @@ Just click the 'S' button on chrome bar to reveal the pages in front of you.
 
 If you want to fork and improve or modify something, please leave a comment [here](https://github.com/noGreg/scribdStrip/issues/1) about it 🙏
 
-**You can also [sponsor the project ⭐](https://www.patreon.com/abax_)
+**You can also [sponsor the project ⭐](https://www.patreon.com/abax_)**
 
 # Chrome store
 
