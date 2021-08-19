@@ -1,12 +1,17 @@
 # scribdStrip
 
-Chrome extension for Scribd Document pages revealing without subscribing.
+Chrome extension for revealing pages content without subscribing.
 
 # Use
 
 Just click the 'S' button on chrome bar to reveal the pages in front of you.
 
-![alt text](./demo.gif "Demo gif")
+![alt text](./src/assets/images/demo.gif "Demo gif")
+
+# Supported sites
+
+ - scribd.com/docs
+ - studocu.com
 
 # Contribute
 

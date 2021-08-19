@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "name": "Open doors (Now supports coursehero.com) 🎉",
+    "name": "Open doors (Now supports studocu.com) 🎉",
     "version": "2.1.0",
     "description": "Chrome extension for revealing content without subscribing.",
     "icons": { 
@@ -15,14 +15,14 @@
                 "http://*.scribd.com/*",
                 "https://scribd.com/*",
                 "http://scribd.com/*",
-                "https://*.coursehero.com/*",
-                "http://*.coursehero.com/*",
-                "https://coursehero.com/*",
-                "http://coursehero.com/*"
+                "https://*.studocu.com/*",
+                "http://*.studocu.com/*",
+                "https://studocu.com/*",
+                "http://studocu.com/*"
             ],
             "js": [
                 "./src/sites/scribd.com/content.js",
-                "./src/sites/coursehero.com/content.js"
+                "./src/sites/studocu.com/content.js"
             ]
         }
     ],

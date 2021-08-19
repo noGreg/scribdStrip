@@ -1,27 +1,25 @@
 (function(){
     chrome.runtime.onMessage.addListener(receiveedMessage);
 
-    function receiveedMessage(message, sender, sendResponse) {
-        if (message.content == 'clean:scribd.com') {
-            let pages = document.querySelectorAll('.bdp_preview_single html-preview');
+    function receiveedMessage(message) {
+        if (message.content !== 'clean:scribd.com') return undefined; 
+        
+        const pages = document.querySelectorAll('.outer_page');
 
-            Array.from(pages).forEach(page => {
-                try {
+        Array.from(pages).forEach(page => {
+            try {
 
-                    let blocker = page.querySelector(".blocker-wrapper"); // to remove
+                //#region -- remove promo pop-up from page
 
-
-                    // --- DEATH CODE 
-
-                    return;
-                    // remove promo pop-up from page
-
-                    let promo = page.querySelector('.auto__doc_page_webpack_doc_page_blur_promo');
+                    const promo = page.querySelector('.auto__doc_page_webpack_doc_page_blur_promo');
                     promo.parentElement.removeChild(promo);
 
-                    // Search for blured text and set to normal
+                //#endregion
+
+                //#region -- Search for blured text and set to normal
                     
-                    let blurWraps = page.querySelectorAll('[class^="ff"]');
+                    const blurWraps = page.querySelectorAll('[class^="ff"]');
+                    
                     blurWraps.forEach(blurGroup => {
                         Array.from(blurGroup.children).forEach(span => {
                             Object.assign(span.style, {
@@ -37,9 +35,12 @@
                         });
                     });
 
-                    // Search for blured images and set to normal
+                //#endregion
 
-                    let blurImages = page.querySelectorAll('img');
+                //#region -- Search for blured images and set to normal
+
+                    const blurImages = page.querySelectorAll('img');
+
                     Array.from(blurImages).forEach(img => {
                         Object.assign(img.style, {
                             webkitTransition: 'all .5s',
@@ -48,8 +49,10 @@
                     });
 
                     Array.from(blurImages).forEach(img => (img.style.opacity = 1));
-                } catch(err) {}
-            });
-        }
+
+                //#endregion
+
+            } catch(err) {}
+        });
     }
 })();

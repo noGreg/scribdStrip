@@ -1,21 +1,19 @@
 (() => {
   
-  let revealButton = document.getElementById("revealButton");
+  const revealButton = document.getElementById("revealButton");
 
   if (revealButton) revealButton.onclick = () => {
 
-    let tabParams = {
+    const tabParams = {
       active: true,
       currentWindow: true
     }
     
     chrome.tabs.query(tabParams, tabs => {
-      let tab = tabs[0];
-      let domain = tab.url.replace(/https:\/\/|http:\/\/|\/.+/gmi, "");
-      let hasSubdomain = ([...domain].filter(c => c === ".")).length > 1;
-      let host = hasSubdomain ? domain.replace(/\w+./, "") : domain;
-
-      console.log({ url: tab.url, host }); 
+      const tab = tabs[0];
+      const domain = tab.url.replace(/https:\/\/|http:\/\/|\/.+/gmi, "");
+      const hasSubdomain = ([...domain].filter(c => c === ".")).length > 1;
+      const host = hasSubdomain ? domain.replace(/\w+./, "") : domain;
 
       chrome.tabs.sendMessage(tab.id, { content: `clean:${host}` });
     });
