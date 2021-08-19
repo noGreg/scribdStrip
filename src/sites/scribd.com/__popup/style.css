@@ -1,0 +1,27 @@
+.container {
+  width: 200px;
+}
+
+a {
+  width: 100%;
+}
+
+button.button {
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 3px 10px;
+  width: 100%;
+  background-color: gray;
+  color: white;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+  border: 0;
+}
+
+button.button:last-child {
+  margin-bottom: 0;
+}
+
+button.button-success {
+  background-color: #27ae60;
+}

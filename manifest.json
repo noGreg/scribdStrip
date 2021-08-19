@@ -1,25 +1,34 @@
 {
     "manifest_version": 2,
-    "name": "Scribd pages reveal - (Next name: Open doors)",
-    "version": "1.0.1",
-    "description": "Chrome extension for Scribd Document pages revealing without subscribing.",
+    "name": "Open doors (Now supports coursehero.com) 🎉",
+    "version": "2.1.0",
+    "description": "Chrome extension for revealing content without subscribing.",
     "icons": { 
-        "16": "./scribd.com/assets/images/logo16.png",
-        "48": "./scribd.com/assets/images/logo48.png",
-        "128": "./scribd.com/assets/images/logo128.png" 
+        "16": "./src/assets/images/logo16.png",
+        "48": "./src/assets/images/logo48.png",
+        "128": "./src/assets/images/logo128.png" 
     },
     "content_scripts": [
         {
             "matches": [
                 "https://*.scribd.com/*",
-                "http://*.scribd.com/*"
+                "http://*.scribd.com/*",
+                "https://scribd.com/*",
+                "http://scribd.com/*",
+                "https://*.coursehero.com/*",
+                "http://*.coursehero.com/*",
+                "https://coursehero.com/*",
+                "http://coursehero.com/*"
             ],
-            "js": ["./scribd.com/content.js"]
+            "js": [
+                "./src/sites/scribd.com/content.js",
+                "./src/sites/coursehero.com/content.js"
+            ]
         }
     ],
     "permissions": ["tabs"],
     "browser_action": {
-        "default_icon": "./general_logo.png",
-        "default_popup": "./scribd.com/popup/index.html"
+        "default_icon": "./src/assets/images/general_logo.png",
+        "default_popup": "./src/popup/index.html"
     }
 }

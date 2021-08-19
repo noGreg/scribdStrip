@@ -2,7 +2,7 @@
     chrome.runtime.onMessage.addListener(receiveedMessage);
 
     function receiveedMessage(message, sender, sendResponse) {
-        if (message.content == 'clean') {
+        if (message.content == 'clean:coursehero.com') {
             let pages = document.querySelectorAll('.outer_page');
 
             Array.from(pages).forEach(page => {
